@@ -1,0 +1,893 @@
+[
+  {
+    "record_id": "MR-0005",
+    "date": "2024-09-19",
+    "asset_id": "EP-002",
+    "equipment_type": "Electrical panel",
+    "location": "Block A, 1st floor",
+    "reported_by": "housekeeping supervisor",
+    "complaint": "Urgent - RCCB trips during rain, also mild shock felt on a metal equipment body at Block A, 1st floor.",
+    "root_cause": "Earth leakage causing RCCB trips",
+    "fix_steps": [
+      "Perform an insulation resistance test",
+      "Locate and fix the leakage or earthing fault",
+      "Replace the RCCB if defective",
+      "Verify earth resistance"
+    ],
+    "parts_used": [
+      "RCCB",
+      "earthing wire"
+    ],
+    "cost_inr": 2800,
+    "downtime_hours": 2.5,
+    "urgency": "Critical",
+    "safety_critical": true,
+    "prior_failures_on_asset": 0,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found earth leakage causing RCCB trips. Perform an insulation resistance test. Unit monitored for an hour after repair; no issues.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0012",
+    "date": "2024-10-14",
+    "asset_id": "PUMP-004",
+    "equipment_type": "Water pump",
+    "location": "Main sump",
+    "reported_by": "housekeeping supervisor",
+    "complaint": "Main sump: Burning smell from the pump motor, also pump motor humming but not starting. Please check.",
+    "root_cause": "Burnt motor winding or failed starting capacitor",
+    "fix_steps": [
+      "Isolate power and test winding resistance",
+      "Replace the starting capacitor or rewind the motor",
+      "Check insulation resistance",
+      "Test run and check current draw"
+    ],
+    "parts_used": [
+      "motor winding"
+    ],
+    "cost_inr": 5500,
+    "downtime_hours": 3.0,
+    "urgency": "High",
+    "safety_critical": false,
+    "prior_failures_on_asset": 0,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found burnt motor winding or failed starting capacitor. Isolate power and test winding resistance. Verified operation with the user before closing the ticket.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0024",
+    "date": "2024-11-04",
+    "asset_id": "PUMP-002",
+    "equipment_type": "Water pump",
+    "location": "Hostel 1 pump room",
+    "reported_by": "housekeeping supervisor",
+    "complaint": "Motor running but no water lift in Hostel 1 pump room.",
+    "root_cause": "Loss of prime and leaking foot valve",
+    "fix_steps": [
+      "Stop the pump and re-prime it",
+      "Inspect and replace the foot valve",
+      "Check the suction pipe for air leaks",
+      "Run the pump and confirm tank filling"
+    ],
+    "parts_used": [
+      "foot valve"
+    ],
+    "cost_inr": 2250,
+    "downtime_hours": 1.5,
+    "urgency": "Medium",
+    "safety_critical": false,
+    "prior_failures_on_asset": 0,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found loss of prime and leaking foot valve. Stop the pump and re-prime it. Unit monitored for an hour after repair; no issues.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0026",
+    "date": "2024-11-10",
+    "asset_id": "CCTV-004",
+    "equipment_type": "CCTV system",
+    "location": "Hostel 1 corridor",
+    "reported_by": "hostel warden",
+    "complaint": "No video from the camera in the parking area.",
+    "root_cause": "Camera cable or PoE switch port failure",
+    "fix_steps": [
+      "Check the camera power and cable",
+      "Test the PoE switch port",
+      "Replace the cable or move to a spare port"
+    ],
+    "parts_used": [
+      "PoE injector",
+      "network cable"
+    ],
+    "cost_inr": 2800,
+    "downtime_hours": 2.5,
+    "urgency": "Medium",
+    "safety_critical": false,
+    "prior_failures_on_asset": 2,
+    "prior_same_cause_on_asset": 2,
+    "technician_notes": "Found camera cable or PoE switch port failure. Check the camera power and cable. Recurring issue - 2 similar failure(s) earlier on this asset. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0030",
+    "date": "2024-11-21",
+    "asset_id": "LIFT-005",
+    "equipment_type": "Elevator",
+    "location": "Admin Building lift",
+    "reported_by": "admin staff",
+    "complaint": "Lift display blank and not moving in Admin Building lift.",
+    "root_cause": "Controller board fault or overload trip",
+    "fix_steps": [
+      "Check the MCB and main supply",
+      "Inspect controller board and relays",
+      "Reset or replace the controller board",
+      "Full safety-circuit test before release"
+    ],
+    "parts_used": [
+      "relay"
+    ],
+    "cost_inr": 9300,
+    "downtime_hours": 3.5,
+    "urgency": "Critical",
+    "safety_critical": true,
+    "prior_failures_on_asset": 1,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found controller board fault or overload trip. Check the MCB and main supply. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0045",
+    "date": "2024-12-30",
+    "asset_id": "PUMP-003",
+    "equipment_type": "Water pump",
+    "location": "Hostel 3 pump room",
+    "reported_by": "housekeeping supervisor",
+    "complaint": "Water dripping near the pump shaft, also water leaking from the pump body in Hostel 3 pump room.",
+    "root_cause": "Worn mechanical seal and loose pipe joints",
+    "fix_steps": [
+      "Replace the mechanical seal",
+      "Tighten and reseal pipe joints",
+      "Check the pressure gauge"
+    ],
+    "parts_used": [
+      "mechanical seal"
+    ],
+    "cost_inr": 1250,
+    "downtime_hours": 2.0,
+    "urgency": "Low",
+    "safety_critical": false,
+    "prior_failures_on_asset": 0,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found worn mechanical seal and loose pipe joints. Replace the mechanical seal. Unit monitored for an hour after repair; no issues.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0063",
+    "date": "2025-02-09",
+    "asset_id": "LT-001",
+    "equipment_type": "Lighting",
+    "location": "Block D, 1st floor",
+    "reported_by": "hostel warden",
+    "complaint": "Complaint from security guard: Corridor lights not switching on at night (Block D, 1st floor).",
+    "root_cause": "Faulty timer or photocell controller",
+    "fix_steps": [
+      "Check timer settings and supply",
+      "Replace the photocell or timer",
+      "Test for two cycles"
+    ],
+    "parts_used": [
+      "photocell"
+    ],
+    "cost_inr": 1550,
+    "downtime_hours": 1.5,
+    "urgency": "Low",
+    "safety_critical": false,
+    "prior_failures_on_asset": 2,
+    "prior_same_cause_on_asset": 2,
+    "technician_notes": "Found faulty timer or photocell controller. Check timer settings and supply. Recurring issue - 2 similar failure(s) earlier on this asset. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0066",
+    "date": "2025-02-15",
+    "asset_id": "AC-010",
+    "equipment_type": "Air conditioner",
+    "location": "Hostel 1, 1st floor",
+    "reported_by": "lab assistant",
+    "complaint": "AC cooling has slowly reduced over weeks, also ice forming on the AC copper pipe.",
+    "root_cause": "Low refrigerant due to gas leak",
+    "fix_steps": [
+      "Perform a pressure and leak test",
+      "Seal or weld the leaking joint",
+      "Vacuum the line and recharge refrigerant",
+      "Verify cooling and gas pressure"
+    ],
+    "parts_used": [
+      "refrigerant gas",
+      "copper joint"
+    ],
+    "cost_inr": 6800,
+    "downtime_hours": 2.0,
+    "urgency": "Medium",
+    "safety_critical": false,
+    "prior_failures_on_asset": 1,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found low refrigerant due to gas leak. Perform a pressure and leak test. Unit monitored for an hour after repair; no issues.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0074",
+    "date": "2025-03-31",
+    "asset_id": "DG-003",
+    "equipment_type": "Diesel generator",
+    "location": "Admin Building basement",
+    "reported_by": "housekeeping supervisor",
+    "complaint": "Admin Building basement: Generator auto start not working during the outage. Please check.",
+    "root_cause": "Weak or dead starter battery",
+    "fix_steps": [
+      "Test battery voltage and load",
+      "Replace the starter battery",
+      "Check charging alternator and terminals",
+      "Do a start test on load"
+    ],
+    "parts_used": [
+      "12V battery"
+    ],
+    "cost_inr": 5600,
+    "downtime_hours": 1.0,
+    "urgency": "High",
+    "safety_critical": false,
+    "prior_failures_on_asset": 2,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found weak or dead starter battery. Test battery voltage and load. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0077",
+    "date": "2025-04-15",
+    "asset_id": "FA-001",
+    "equipment_type": "Fire alarm system",
+    "location": "Block D, Ground floor",
+    "reported_by": "student",
+    "complaint": "Fire alarm panel beeping repeatedly, also smoke detector false alarm in the lab near Block D, Ground floor, started last week.",
+    "root_cause": "Dirty smoke detector causing false alarms",
+    "fix_steps": [
+      "Identify the zone on the panel",
+      "Clean or replace the smoke detector",
+      "Reset the zone and test it"
+    ],
+    "parts_used": [
+      "smoke detector"
+    ],
+    "cost_inr": 2250,
+    "downtime_hours": 2.0,
+    "urgency": "High",
+    "safety_critical": true,
+    "prior_failures_on_asset": 1,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found dirty smoke detector causing false alarms. Identify the zone on the panel. Unit monitored for an hour after repair; no issues.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0098",
+    "date": "2025-06-07",
+    "asset_id": "AC-012",
+    "equipment_type": "Air conditioner",
+    "location": "Block D, 3rd floor",
+    "reported_by": "admin staff",
+    "complaint": "AC outdoor unit humming but the fan is not spinning in Block D, 3rd floor.",
+    "root_cause": "Failed compressor run capacitor",
+    "fix_steps": [
+      "Isolate power and discharge the capacitor",
+      "Test capacitor value with a multimeter",
+      "Replace the run capacitor",
+      "Check compressor amperage after restart"
+    ],
+    "parts_used": [
+      "run capacitor"
+    ],
+    "cost_inr": 850,
+    "downtime_hours": 2.0,
+    "urgency": "High",
+    "safety_critical": false,
+    "prior_failures_on_asset": 0,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found failed compressor run capacitor. Isolate power and discharge the capacitor. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0102",
+    "date": "2025-06-17",
+    "asset_id": "PRJ-004",
+    "equipment_type": "Projector",
+    "location": "Hostel 2, 2nd floor",
+    "reported_by": "student",
+    "complaint": "No signal on the projector from the laptop near Hostel 2, 2nd floor, started yesterday.",
+    "root_cause": "Faulty HDMI cable or input port",
+    "fix_steps": [
+      "Swap the HDMI cable",
+      "Test other input ports",
+      "Replace the cable or port board"
+    ],
+    "parts_used": [
+      "HDMI cable"
+    ],
+    "cost_inr": 350,
+    "downtime_hours": 0.5,
+    "urgency": "Low",
+    "safety_critical": false,
+    "prior_failures_on_asset": 1,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found faulty HDMI cable or input port. Swap the HDMI cable. Unit monitored for an hour after repair; no issues.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0112",
+    "date": "2025-07-05",
+    "asset_id": "DG-003",
+    "equipment_type": "Diesel generator",
+    "location": "Admin Building basement",
+    "reported_by": "lab assistant",
+    "complaint": "Complaint from housekeeping supervisor: Changeover switch not working (Admin Building basement).",
+    "root_cause": "Faulty ATS changeover contactor",
+    "fix_steps": [
+      "Check the ATS control supply and logic",
+      "Inspect contactor contacts for burning",
+      "Replace the ATS contactor",
+      "Test changeover in both directions"
+    ],
+    "parts_used": [
+      "ATS contactor"
+    ],
+    "cost_inr": 5900,
+    "downtime_hours": 5.0,
+    "urgency": "Critical",
+    "safety_critical": true,
+    "prior_failures_on_asset": 3,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found faulty ATS changeover contactor. Check the ATS control supply and logic. Recurring issue - 1 similar failure(s) earlier on this asset. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0128",
+    "date": "2025-08-06",
+    "asset_id": "LIFT-005",
+    "equipment_type": "Elevator",
+    "location": "Admin Building lift",
+    "reported_by": "security guard",
+    "complaint": "Lift door makes a grinding noise in Admin Building lift.",
+    "root_cause": "Dirty door track and misaligned door sensor",
+    "fix_steps": [
+      "Clean the door sill and track",
+      "Realign the door sensor",
+      "Lubricate door rollers",
+      "Test door cycle 10 times"
+    ],
+    "parts_used": [
+      "door sensor"
+    ],
+    "cost_inr": 2800,
+    "downtime_hours": 1.5,
+    "urgency": "Medium",
+    "safety_critical": false,
+    "prior_failures_on_asset": 5,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found dirty door track and misaligned door sensor. Clean the door sill and track. Recurring issue - 1 similar failure(s) earlier on this asset. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0140",
+    "date": "2025-09-15",
+    "asset_id": "PRJ-004",
+    "equipment_type": "Projector",
+    "location": "Hostel 2, 2nd floor",
+    "reported_by": "security guard",
+    "complaint": "Projector shuts down after 10 minutes in Hostel 2, 2nd floor.",
+    "root_cause": "Projector lamp near end of life with dust in vents",
+    "fix_steps": [
+      "Clean the air filter and vents",
+      "Replace the projector lamp",
+      "Reset the lamp timer"
+    ],
+    "parts_used": [
+      "projector lamp"
+    ],
+    "cost_inr": 5900,
+    "downtime_hours": 1.5,
+    "urgency": "Low",
+    "safety_critical": false,
+    "prior_failures_on_asset": 2,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found projector lamp near end of life with dust in vents. Clean the air filter and vents. Recurring issue - 1 similar failure(s) earlier on this asset. Verified operation with the user before closing the ticket.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0142",
+    "date": "2025-09-19",
+    "asset_id": "DG-003",
+    "equipment_type": "Diesel generator",
+    "location": "Admin Building basement",
+    "reported_by": "faculty member",
+    "complaint": "Admin Building basement: Coolant leaking under the generator. Please check.",
+    "root_cause": "Coolant loss and radiator blockage causing overheating",
+    "fix_steps": [
+      "Let the engine cool down and inspect for leaks",
+      "Refill coolant and replace the leaking hose or thermostat",
+      "Clean the radiator fins",
+      "Run a temperature test on load"
+    ],
+    "parts_used": [
+      "thermostat",
+      "coolant",
+      "radiator hose"
+    ],
+    "cost_inr": 5200,
+    "downtime_hours": 2.0,
+    "urgency": "High",
+    "safety_critical": false,
+    "prior_failures_on_asset": 6,
+    "prior_same_cause_on_asset": 2,
+    "technician_notes": "Found coolant loss and radiator blockage causing overheating. Let the engine cool down and inspect for leaks. Recurring issue - 2 similar failure(s) earlier on this asset. Tested after repair; operating normally.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0147",
+    "date": "2025-09-25",
+    "asset_id": "EP-005",
+    "equipment_type": "Electrical panel",
+    "location": "Block B, 3rd floor",
+    "reported_by": "lab assistant",
+    "complaint": "Power trips whenever many machines are on.",
+    "root_cause": "Overloaded circuit causing MCB trips",
+    "fix_steps": [
+      "Measure the load on each phase",
+      "Redistribute the load across circuits",
+      "Replace the weak MCB if needed",
+      "Monitor for 24 hours"
+    ],
+    "parts_used": [
+      "MCB"
+    ],
+    "cost_inr": 550,
+    "downtime_hours": 1.5,
+    "urgency": "High",
+    "safety_critical": true,
+    "prior_failures_on_asset": 2,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found overloaded circuit causing MCB trips. Measure the load on each phase. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0149",
+    "date": "2025-10-04",
+    "asset_id": "PL-008",
+    "equipment_type": "Plumbing",
+    "location": "Cafeteria, Ground floor",
+    "reported_by": "lab assistant",
+    "complaint": "Complaint from housekeeping supervisor: Water leaking from the ceiling, also water dripping from a pipe in the ceiling (Cafeteria, Ground floor).",
+    "root_cause": "Leaking pipe joint or fitting",
+    "fix_steps": [
+      "Close the local water supply",
+      "Locate the leak and replace the fitting",
+      "Repair the damaged plaster and waterproofing",
+      "Pressure test the line"
+    ],
+    "parts_used": [
+      "sealant"
+    ],
+    "cost_inr": 3650,
+    "downtime_hours": 3.0,
+    "urgency": "Medium",
+    "safety_critical": false,
+    "prior_failures_on_asset": 1,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found leaking pipe joint or fitting. Close the local water supply. Recurring issue - 1 similar failure(s) earlier on this asset. Verified operation with the user before closing the ticket.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0154",
+    "date": "2025-10-07",
+    "asset_id": "RO-002",
+    "equipment_type": "Water purifier",
+    "location": "Admin Building, 1st floor",
+    "reported_by": "hostel warden",
+    "complaint": "RO water tastes bad, also purifier taking too long to fill.",
+    "root_cause": "Clogged sediment filter and fouled RO membrane",
+    "fix_steps": [
+      "Replace the sediment and carbon filters",
+      "Flush or replace the RO membrane",
+      "Test TDS after service"
+    ],
+    "parts_used": [
+      "sediment filter",
+      "RO membrane"
+    ],
+    "cost_inr": 1550,
+    "downtime_hours": 2.0,
+    "urgency": "Low",
+    "safety_critical": false,
+    "prior_failures_on_asset": 4,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found clogged sediment filter and fouled RO membrane. Replace the sediment and carbon filters. Recurring issue - 1 similar failure(s) earlier on this asset. Tested after repair; operating normally.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0161",
+    "date": "2025-10-31",
+    "asset_id": "UPS-001",
+    "equipment_type": "UPS",
+    "location": "Lab Complex, Ground floor",
+    "reported_by": "admin staff",
+    "complaint": "UPS overload alarm in Lab Complex, Ground floor.",
+    "root_cause": "Inverter overload and faulty inverter board",
+    "fix_steps": [
+      "Measure the connected load",
+      "Reduce load or shift equipment to another UPS",
+      "Inspect and replace the inverter board if faulty"
+    ],
+    "parts_used": [
+      "inverter board"
+    ],
+    "cost_inr": 12150,
+    "downtime_hours": 3.0,
+    "urgency": "Medium",
+    "safety_critical": false,
+    "prior_failures_on_asset": 6,
+    "prior_same_cause_on_asset": 3,
+    "technician_notes": "Found inverter overload and faulty inverter board. Measure the connected load. Recurring issue - 3 similar failure(s) earlier on this asset. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0163",
+    "date": "2025-11-04",
+    "asset_id": "AC-004",
+    "equipment_type": "Air conditioner",
+    "location": "Block C, Ground floor",
+    "reported_by": "housekeeping supervisor",
+    "complaint": "Bad smell coming from the AC. Happening since this morning. Location: Block C, Ground floor.",
+    "root_cause": "Clogged air filter and dirty evaporator coil",
+    "fix_steps": [
+      "Switch off and isolate the unit",
+      "Remove and wash or replace the air filter",
+      "Clean the evaporator coil with coil cleaner",
+      "Check airflow and run a cooling test"
+    ],
+    "parts_used": [
+      "air filter"
+    ],
+    "cost_inr": 1200,
+    "downtime_hours": 2.0,
+    "urgency": "Low",
+    "safety_critical": false,
+    "prior_failures_on_asset": 0,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found clogged air filter and dirty evaporator coil. Switch off and isolate the unit. Verified operation with the user before closing the ticket.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0168",
+    "date": "2025-11-15",
+    "asset_id": "CCTV-001",
+    "equipment_type": "CCTV system",
+    "location": "Parking area",
+    "reported_by": "faculty member",
+    "complaint": "NVR beeping continuously, also CCTV recording not available near Parking area, started this morning.",
+    "root_cause": "Recorder hard disk failure",
+    "fix_steps": [
+      "Check the disk status on the NVR",
+      "Replace the failed hard disk",
+      "Format and confirm recording"
+    ],
+    "parts_used": [
+      "surveillance hard disk"
+    ],
+    "cost_inr": 8950,
+    "downtime_hours": 2.0,
+    "urgency": "Medium",
+    "safety_critical": false,
+    "prior_failures_on_asset": 4,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found recorder hard disk failure. Check the disk status on the NVR. Recurring issue - 1 similar failure(s) earlier on this asset. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0191",
+    "date": "2026-01-17",
+    "asset_id": "LT-003",
+    "equipment_type": "Lighting",
+    "location": "Block B, Ground floor",
+    "reported_by": "faculty member",
+    "complaint": "Tube lights flickering in the corridor in Block B, Ground floor.",
+    "root_cause": "Failed LED driver or ballast",
+    "fix_steps": [
+      "Test the driver output",
+      "Replace the driver or ballast",
+      "Confirm stable lighting"
+    ],
+    "parts_used": [
+      "LED driver"
+    ],
+    "cost_inr": 1200,
+    "downtime_hours": 1.5,
+    "urgency": "Low",
+    "safety_critical": false,
+    "prior_failures_on_asset": 1,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found failed LED driver or ballast. Test the driver output. Recurring issue - 1 similar failure(s) earlier on this asset. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0196",
+    "date": "2026-01-25",
+    "asset_id": "PL-008",
+    "equipment_type": "Plumbing",
+    "location": "Cafeteria, Ground floor",
+    "reported_by": "hostel warden",
+    "complaint": "Washroom drain overflowing, also water not draining from the floor trap. Happening since yesterday. Location: Cafeteria, Ground floor.",
+    "root_cause": "Blocked drain line",
+    "fix_steps": [
+      "Rod or jet the drain line",
+      "Clear the blockage and clean the trap",
+      "Flush with clean water"
+    ],
+    "parts_used": [
+      "drain cleaner"
+    ],
+    "cost_inr": 1150,
+    "downtime_hours": 2.0,
+    "urgency": "Medium",
+    "safety_critical": false,
+    "prior_failures_on_asset": 3,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found blocked drain line. Rod or jet the drain line. Recurring issue - 1 similar failure(s) earlier on this asset. Tested after repair; operating normally.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0216",
+    "date": "2026-03-27",
+    "asset_id": "RO-002",
+    "equipment_type": "Water purifier",
+    "location": "Admin Building, 1st floor",
+    "reported_by": "lab assistant",
+    "complaint": "Water cooler not cooling near Admin Building, 1st floor, started the past few hours.",
+    "root_cause": "Cooling unit failure in the water cooler",
+    "fix_steps": [
+      "Check thermostat and compressor",
+      "Recharge gas or replace the thermostat",
+      "Test the cooling cycle"
+    ],
+    "parts_used": [
+      "refrigerant gas"
+    ],
+    "cost_inr": 3450,
+    "downtime_hours": 1.0,
+    "urgency": "Low",
+    "safety_critical": false,
+    "prior_failures_on_asset": 5,
+    "prior_same_cause_on_asset": 3,
+    "technician_notes": "Found cooling unit failure in the water cooler. Check thermostat and compressor. Recurring issue - 3 similar failure(s) earlier on this asset. Tested after repair; operating normally.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0221",
+    "date": "2026-04-03",
+    "asset_id": "EP-006",
+    "equipment_type": "Electrical panel",
+    "location": "Library, 3rd floor",
+    "reported_by": "housekeeping supervisor",
+    "complaint": "Sparking near the switch board, also flickering power with a crackling sound, started last week.",
+    "root_cause": "Loose terminal connection causing overheating",
+    "fix_steps": [
+      "Isolate the supply immediately",
+      "Tighten all terminal connections",
+      "Replace burnt MCB, wire or socket",
+      "Thermal-scan the board after repair"
+    ],
+    "parts_used": [
+      "MCB",
+      "wire",
+      "socket"
+    ],
+    "cost_inr": 1550,
+    "downtime_hours": 2.0,
+    "urgency": "Critical",
+    "safety_critical": true,
+    "prior_failures_on_asset": 3,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found loose terminal connection causing overheating. Isolate the supply immediately. Recurring issue - 1 similar failure(s) earlier on this asset. Tested after repair; operating normally.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0228",
+    "date": "2026-04-23",
+    "asset_id": "UPS-004",
+    "equipment_type": "UPS",
+    "location": "Block C, 3rd floor",
+    "reported_by": "faculty member",
+    "complaint": "UPS battery swollen or hot. Reported by lab assistant.",
+    "root_cause": "Degraded battery bank",
+    "fix_steps": [
+      "Run a battery discharge test",
+      "Replace the battery bank",
+      "Recalibrate battery runtime",
+      "Test backup on full load"
+    ],
+    "parts_used": [
+      "UPS battery set"
+    ],
+    "cost_inr": 15700,
+    "downtime_hours": 1.0,
+    "urgency": "Medium",
+    "safety_critical": false,
+    "prior_failures_on_asset": 2,
+    "prior_same_cause_on_asset": 2,
+    "technician_notes": "Found degraded battery bank. Run a battery discharge test. Recurring issue - 2 similar failure(s) earlier on this asset. Closed after a successful test run.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0240",
+    "date": "2026-05-27",
+    "asset_id": "FA-001",
+    "equipment_type": "Fire alarm system",
+    "location": "Block D, Ground floor",
+    "reported_by": "admin staff",
+    "complaint": "Urgent - Fire alarm panel trouble light on at Block D, Ground floor.",
+    "root_cause": "Panel backup battery fault",
+    "fix_steps": [
+      "Test the backup battery",
+      "Replace the battery",
+      "Verify the panel on mains and battery"
+    ],
+    "parts_used": [
+      "12V sealed battery"
+    ],
+    "cost_inr": 4750,
+    "downtime_hours": 1.5,
+    "urgency": "High",
+    "safety_critical": true,
+    "prior_failures_on_asset": 7,
+    "prior_same_cause_on_asset": 3,
+    "technician_notes": "Found panel backup battery fault. Test the backup battery. Recurring issue - 3 similar failure(s) earlier on this asset. Verified operation with the user before closing the ticket.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0247",
+    "date": "2026-07-02",
+    "asset_id": "LIFT-002",
+    "equipment_type": "Elevator",
+    "location": "Block B lift 1",
+    "reported_by": "security guard",
+    "complaint": "Step at the lift entrance on some floors, also lift stops slightly above the floor level near Block B lift 1, started two days ago.",
+    "root_cause": "Leveling sensor drift and brake wear",
+    "fix_steps": [
+      "Recalibrate the leveling sensor",
+      "Inspect brake pads and brake gap",
+      "Adjust or replace worn brake pads",
+      "Run test trips on all floors"
+    ],
+    "parts_used": [
+      "leveling sensor",
+      "brake pads"
+    ],
+    "cost_inr": 3800,
+    "downtime_hours": 3.5,
+    "urgency": "High",
+    "safety_critical": true,
+    "prior_failures_on_asset": 0,
+    "prior_same_cause_on_asset": 0,
+    "technician_notes": "Found leveling sensor drift and brake wear. Recalibrate the leveling sensor. Tested after repair; operating normally.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0253",
+    "date": "2026-07-16",
+    "asset_id": "PL-003",
+    "equipment_type": "Plumbing",
+    "location": "Hostel 3, Ground floor",
+    "reported_by": "admin staff",
+    "complaint": "Flush running all the time, also flush tank not filling.",
+    "root_cause": "Worn tap washer or faulty flush valve",
+    "fix_steps": [
+      "Replace the tap washer or cartridge",
+      "Replace the flush valve or float",
+      "Check for leaks"
+    ],
+    "parts_used": [
+      "tap washer"
+    ],
+    "cost_inr": 150,
+    "downtime_hours": 1.0,
+    "urgency": "Low",
+    "safety_critical": false,
+    "prior_failures_on_asset": 1,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found worn tap washer or faulty flush valve. Replace the tap washer or cartridge. Recurring issue - 1 similar failure(s) earlier on this asset. Unit monitored for an hour after repair; no issues.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0272",
+    "date": "2026-08-25",
+    "asset_id": "DG-003",
+    "equipment_type": "Diesel generator",
+    "location": "Admin Building basement",
+    "reported_by": "security guard",
+    "complaint": "Generator starts then shuts down after a minute in Admin Building basement.",
+    "root_cause": "Clogged fuel filter and air lock in fuel line",
+    "fix_steps": [
+      "Replace the fuel filter",
+      "Bleed air from the fuel line",
+      "Drain water from the fuel separator and check fuel quality",
+      "Run the set on load for 30 minutes"
+    ],
+    "parts_used": [
+      "fuel filter"
+    ],
+    "cost_inr": 3050,
+    "downtime_hours": 3.0,
+    "urgency": "High",
+    "safety_critical": false,
+    "prior_failures_on_asset": 14,
+    "prior_same_cause_on_asset": 2,
+    "technician_notes": "Found clogged fuel filter and air lock in fuel line. Replace the fuel filter. Recurring issue - 2 similar failure(s) earlier on this asset. Verified operation with the user before closing the ticket.",
+    "status": "resolved",
+    "source": "seed"
+  },
+  {
+    "record_id": "MR-0280",
+    "date": "2026-09-06",
+    "asset_id": "AC-014",
+    "equipment_type": "Air conditioner",
+    "location": "Sports Complex, Ground floor",
+    "reported_by": "housekeeping supervisor",
+    "complaint": "Water stains on the wall below the AC, also AC dripping water on the floor. Happening since yesterday. Location: Sports Complex, Ground floor.",
+    "root_cause": "Blocked condensate drain line",
+    "fix_steps": [
+      "Flush the drain line with air or water",
+      "Clear the blockage and clean the drain tray",
+      "Re-level the indoor unit",
+      "Run the unit and confirm no leakage"
+    ],
+    "parts_used": [
+      "drain pipe"
+    ],
+    "cost_inr": 950,
+    "downtime_hours": 1.5,
+    "urgency": "Low",
+    "safety_critical": false,
+    "prior_failures_on_asset": 9,
+    "prior_same_cause_on_asset": 1,
+    "technician_notes": "Found blocked condensate drain line. Flush the drain line with air or water. Recurring issue - 1 similar failure(s) earlier on this asset. Tested after repair; operating normally.",
+    "status": "resolved",
+    "source": "seed"
+  }
+]

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061225">
+  <title>Cognilogix — AI Facility Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Noto+Sans+Devanagari:wght@400;600&family=Noto+Sans+Telugu:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/feedback.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand-lockup">
+        <div class="brand-logo" aria-label="Cognilogix logo">
+          <svg viewBox="0 0 72 72" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="logoGrad" x1="8" y1="64" x2="64" y2="8">
+                <stop offset="0" stop-color="#16d9ff"/>
+                <stop offset="1" stop-color="#6677ff"/>
+              </linearGradient>
+            </defs>
+            <path d="M36 4 61 18v29L36 62 11 47V18L36 4Z" fill="none" stroke="url(#logoGrad)" stroke-width="5"/>
+            <path d="M24 45V28l12-7 12 7v17M30 45V33h12v12M36 21v-7" fill="none" stroke="#e9fbff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="36" cy="14" r="3.5" fill="#16d9ff"/>
+            <circle cx="21" cy="28" r="3.5" fill="#6677ff"/>
+            <circle cx="51" cy="28" r="3.5" fill="#16d9ff"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">Cognilogix</div>
+          <div class="brand-tag">AI FACILITY INTELLIGENCE</div>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-item active" href="#dashboard" data-view="dashboard"><span class="nav-icon">⌂</span><span>Dashboard</span></a>
+        <a class="nav-item" href="#diagnose" data-view="diagnose"><span class="nav-icon">⌕</span><span>New Diagnosis</span></a>
+        <a class="nav-item" href="#history" data-view="history"><span class="nav-icon">◷</span><span>History</span></a>
+        <a class="nav-item" href="#knowledge" data-view="knowledge"><span class="nav-icon">◈</span><span>Knowledge Base</span></a>
+        <a class="nav-item" href="#analytics" data-view="analytics"><span class="nav-icon">◒</span><span>Analytics</span></a>
+        <a class="nav-item" href="#settings" data-view="settings"><span class="nav-icon">⚙</span><span>Settings</span></a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <button class="campus-card" id="systemStatusBtn" type="button">
+          <div class="pulse-dot"></div>
+          <div>
+            <strong>System Online</strong>
+            <span>All AI agents operational</span>
+          </div>
+        </button>
+        <div class="sidebar-brand-mini">
+          <span class="mini-logo">C</span>
+          <span><b>Cognilogix</b><small>Smarter facilities. Faster fixes.</small></span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-area" id="dashboard">
+      <header class="topbar">
+        <div class="topbar-context">
+          <span class="status-chip"><i></i> AI SYSTEM ONLINE</span>
+          <span class="top-separator">•</span>
+          <span>Smarter Facilities</span>
+          <span class="top-separator">•</span>
+          <span>Faster Decisions</span>
+        </div>
+        <div class="top-actions">
+          <button class="search-pill" id="globalSearch" type="button" aria-label="Search cases, equipment or issues">⌕ <span>Search cases, equipment or issues...</span><kbd>Ctrl K</kbd></button>
+          <button class="icon-btn" id="notificationsBtn" type="button" aria-label="Notifications">♧<b id="notificationCount" hidden></b></button>
+          <button class="profile" id="profileBtn" type="button"><span class="avatar">FM</span><span><strong>Facility Manager</strong><small>Campus Operations</small></span><span>⌄</span></button>
+        </div>
+      </header>
+
+      <section class="hero" id="diagnose">
+        <div class="hero-copy">
+          <div class="eyebrow">COGNILOGIX / DECISION CENTER</div>
+          <h1>Good afternoon, Facility Manager <span>👋</span></h1>
+          <p>Describe an equipment problem and our AI agents will retrieve past repairs, reason over the evidence, and recommend the next action.</p>
+        </div>
+        <div class="hero-badge">
+          <span class="hero-orbit">✦</span>
+          <div><b>AI-POWERED</b><span>Campus maintenance intelligence</span></div>
+        </div>
+      </section>
+
+      <section class="diagnose-card glass-card">
+        <div class="input-heading">
+          <div>
+            <span class="section-kicker">NEW DIAGNOSIS</span>
+            <h2>What’s happening?</h2>
+          </div>
+          <span class="micro-hint">English • తెలుగు • हिन्दी • Hinglish</span>
+        </div>
+        <form id="form" autocomplete="off">
+          <div class="input-wrap">
+            <span class="input-icon">◈</span>
+            <textarea id="complaint" rows="2" maxlength="1000" placeholder="Describe the equipment problem in your own words..."></textarea>
+            <span class="input-corner">⌘↵</span>
+          </div>
+          <div class="diagnose-controls">
+            <div class="equipment-picker">
+              <label for="equipment">EQUIPMENT</label>
+              <select id="equipment">
+                <option value="">Auto detect</option>
+              </select>
+            </div>
+            <div class="equipment-quick">
+              <button type="button" class="eq-card selected" data-eq=""><span>❄</span><b>AC</b><small>Cooling</small></button>
+              <button type="button" class="eq-card" data-eq="Generator"><span>ϟ</span><b>Generator</b><small>Power</small></button>
+              <button type="button" class="eq-card" data-eq="Elevator"><span>▣</span><b>Elevator</b><small>Lift</small></button>
+              <button type="button" class="eq-card" data-eq="Electrical"><span>♢</span><b>Safety</b><small>Electrical</small></button>
+            </div>
+            <button type="submit" id="run" class="primary">
+              <span class="run-spark">✦</span><span class="run-label">Analyze Issue</span><span class="arrow">→</span>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section class="quick-section">
+        <div class="section-title"><div><span class="section-kicker">QUICK ACTIONS</span><h2>Start with an equipment type</h2></div><span class="live-label"><i></i> Live decision engine</span></div>
+        <div class="quick-grid">
+          <button class="quick-tile ac" type="button" data-eq-tile="AC"><span class="tile-icon">❄</span><span><b>AC</b><small>Cooling / Heating</small></span><em>→</em></button>
+          <button class="quick-tile gen" type="button" data-eq-tile="Generator"><span class="tile-icon">ϟ</span><span><b>Generator</b><small>Power supply</small></span><em>→</em></button>
+          <button class="quick-tile lift" type="button" data-eq-tile="Elevator"><span class="tile-icon">▣</span><span><b>Elevator</b><small>Lift / movement</small></span><em>→</em></button>
+          <button class="quick-tile safety" type="button" data-eq-tile="Electrical"><span class="tile-icon">!</span><span><b>Safety</b><small>Fire / electrical</small></span><em>→</em></button>
+        </div>
+      </section>
+
+      <div class="content-layout">
+        <div class="content-main">
+          <section class="agent-panel glass-card">
+            <div class="panel-heading">
+              <div><span class="panel-icon">✦</span><div><span class="section-kicker">MULTI-AGENT ORCHESTRATION</span><h2>AI Agent Flow</h2></div></div>
+              <span class="flow-status">READY</span>
+            </div>
+            <ol id="line" class="line" aria-label="Agents working on the complaint"></ol>
+          </section>
+
+          <div id="alert" role="alert"></div>
+
+          <section id="result">
+            <div class="empty glass-card">
+              <div class="empty-orb">✦</div>
+              <span class="section-kicker">COGNILOGIX INTELLIGENCE</span>
+              <h2>Ready to investigate your next issue</h2>
+              <p>Enter a complaint above. Cognilogix will retrieve similar maintenance cases, identify evidence-backed causes, recommend a fix, and explain the reasoning.</p>
+              <div class="empty-features"><span>◈ Historical evidence</span><span>◎ Multi-agent reasoning</span><span>↻ Technician feedback</span></div>
+            </div>
+          </section>
+        </div>
+
+        <aside class="right-rail">
+          <section class="rail-card">
+            <div class="rail-heading"><span>◷</span><h3>Recent Diagnoses</h3><a href="#history" id="historyViewAll">View all →</a></div>
+            <ul id="history" class="history">
+              <li class="muted">No diagnoses yet. Your recent runs will appear here.</li>
+            </ul>
+          </section>
+
+          <section class="rail-card">
+            <div class="rail-heading"><span>◉</span><h3>System Snapshot</h3></div>
+            <div class="snapshot-grid">
+              <div><strong id="stat-kb">-</strong><span>Past cases</span></div>
+              <div><strong id="stat-runs">-</strong><span>Diagnoses</span></div>
+              <div class="wide"><strong id="stat-model">-</strong><span>Reasoning model</span></div>
+            </div>
+          </section>
+
+          <section class="rail-card">
+            <div class="rail-heading"><span>◎</span><h3>Try a Scenario</h3></div>
+            <div id="samples" class="chips"></div>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+  <script src="/static/feedback.js"></script>
+</body>
+</html>

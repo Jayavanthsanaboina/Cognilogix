@@ -1,0 +1,25 @@
+# Step 2: knowledge base
+chromadb
+sentence-transformers
+
+# Step 3: agents (install the SDK for whichever LLM you use)
+langgraph
+langchain-core
+anthropic        # or: openai / google-generativeai
+
+# Step 4: API
+fastapi
+uvicorn[standard]
+pydantic
+
+# Utilities
+pandas
+python-dotenv
+
+# Later (wow layer)
+scikit-learn     # embedding map (PCA / t-SNE)
+umap-learn       # optional, nicer embedding map
+plotly
+reportlab        # work-order PDF
+
+groq
